@@ -1,0 +1,180 @@
+<template>
+  <div class="menu__sidebar">
+    <div class="menu__wrapper">
+      <button type="button" class="menu__category" data-category="breakfast">
+        <img class="menu__category-icon" src="assets/images/icons/breakfast.png" alt="a breafast icon" />
+        <p class="menu__category-name">Breakfast</p>
+      </button>
+      <button type="button" class="menu__category" data-category="salads">
+        <img class="menu__category-icon" src="/assets/images/icons/salad.png" alt="a salad icon" />
+        <p class="menu__category-name">Salads</p>
+      </button>
+      <button type="button" class="menu__category" data-category="main-course">
+        <img class="menu__category-icon" src="assets/images/icons/course.png" alt="a main course icon" />
+        <p class="menu__category-name">Main Course</p>
+      </button>
+      <button type="button" class="menu__category" data-category="snacks">
+        <img class="menu__category-icon" src="assets/images/icons/snacks.png" alt="a snacks icon" />
+        <p class="menu__category-name">Snacks</p>
+      </button>
+      <button type="button" class="menu__category" data-category="desserts">
+        <img class="menu__category-icon" src="assets/images/icons/dessert.png" alt="an dessert icon" />
+        <p class="menu__category-name">Desserts</p>
+      </button>
+    </div>
+  </div>
+  <ul class="menu__items">
+    <li class="menu__item" data-item-type="breakfast">
+      <img class="menu__image" src="/assets/images/foods/assorted-muffins.png" alt="a declicious assorted muffins" />
+      <h4 class="menu__name">Assorted Muffins</h4>
+      <p class="menu__price">₱80.00 each</p>
+      <p class="menu__description">Freshly baked muffins in flavors like blueberry, chocolate chip, and banana nut.</p>
+    </li>
+    <li class="menu__item" data-item-type="breakfast">
+      <img class="menu__image" src="/assets/images/foods/avocado-toast.png" alt="a declicious avocado toast" />
+      <h4 class="menu__name">Avocado Toast</h4>
+      <p class="menu__price">₱220.00</p>
+      <p class="menu__description">
+        Creamy avocado slices on artisanal toast, drizzled with olive oil and sprinkled with sea salt.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="breakfast">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/bagel-w-cream-cheese.png"
+        alt="a declicious bagel with cream cheese"
+      />
+      <h4 class="menu__name">Bagel with Cream Cheese</h4>
+      <p class="menu__price">₱150.00</p>
+      <p class="menu__description">Freshly baked bagel served with creamy, whipped cream cheese.</p>
+    </li>
+    <li class="menu__item" data-item-type="main-course">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/cheeseburger-w-fries.png"
+        alt="a declicious cheeseburger with fries"
+      />
+      <h4 class="menu__name">Cheeseburger with Fries</h4>
+      <p class="menu__price">₱320.00</p>
+      <p class="menu__description">
+        Juicy beef patty, melted cheese, lettuce, tomato, and onions served with crispy fries.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="desserts">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/chocolate-lava-cake.jpg"
+        alt="a declicious chocolate lava cake"
+      />
+      <h4 class="menu__name">Chocolate Lava Cake</h4>
+      <p class="menu__price">₱280.00</p>
+      <p class="menu__description">
+        Decadent chocolate cake with a molten chocolate center, served with vanilla ice cream.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="desserts">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/churros-w-chocolate-sauce.jpg"
+        alt="a declicious churros with chocolate sauce"
+      />
+      <h4 class="menu__name">Churros with Chocolate Sauce</h4>
+      <p class="menu__price">₱220.00</p>
+      <p class="menu__description">
+        Crispy fried churros dusted with cinnamon sugar, served with warm chocolate dipping sauce.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="breakfast">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/classic-breakfast-sandwich.jpg"
+        alt="a declicious classic breakfast sandwich"
+      />
+      <h4 class="menu__name">Classic Breakfast Sandwich</h4>
+      <p class="menu__price">₱180.00</p>
+      <p class="menu__description">A hearty combination of eggs, bacon, and cheese on toasted bread.</p>
+    </li>
+    <li class="menu__item" data-item-type="salads">
+      <img class="menu__image" src="/assets/images/foods/fruit-parfait.jpg" alt="a declicious fruit parfait" />
+      <h4 class="menu__name">Fruit Parfait</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">Layers of yogurt, granola, and fresh seasonal fruits, topped with honey drizzle.</p>
+    </li>
+    <li class="menu__item" data-item-type="salads">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/grilled-chicken-caesar-salad.jpg"
+        alt="a declicious grilled chicken caesar salad"
+      />
+      <h4 class="menu__name">Grilled Chicken Caesar Salad</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">
+        Grilled chicken breast, crisp romaine lettuce, Parmesan cheese, and Caesar dressing
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="snacks">
+      <img class="menu__image" src="/assets/images/foods/hummus-platter.png" alt="a declicious hummus platter" />
+      <h4 class="menu__name">Humus Platter</h4>
+      <p class="menu__price">₱220.00</p>
+      <p class="menu__description">
+        Creamy chickpea hummus served with carrot sticks, cucumber slices, and pita bread.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="snacks">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/mixed-nutes-dried-fruits.jpg"
+        alt="a declicious mixed nuts and dried fruits"
+      />
+      <h4 class="menu__name">Mixed Nuts and Dried Fruits</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">A healthy blend of almonds, cashews, dried cranberries, and apricots.</p>
+    </li>
+    <li class="menu__item" data-item-type="desserts">
+      <img class="menu__image" src="/assets/images/foods/ny-cheesecake.png" alt="a declicious new york cheesecake" />
+      <h4 class="menu__name">New York Cheesecake</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">Creamy and rich cheesecake on a graham cracker crust, topped with fresh berries.</p>
+    </li>
+    <li class="menu__item" data-item-type="snacks">
+      <img
+        class="menu__image"
+        src="/assets/images/foods/organic-granola-bars.png"
+        alt="a declicious organic granola bars"
+      />
+      <h4 class="menu__name">Organic Granola Bars</h4>
+      <p class="menu__price">₱120.00 each</p>
+      <p class="menu__description">Nutritious bars made with oats, honey, nuts, and dried fruits.</p>
+    </li>
+    <li class="menu__item" data-item-type="main-course">
+      <img class="menu__image" src="/assets/images/foods/pasta-carbonara.jpg" alt="a declicious pasta carbonara" />
+      <h4 class="menu__name">Pasta Carbonara</h4>
+      <p class="menu__price">₱280.00</p>
+      <p class="menu__description">Creamy pasta with crispy bacon, Parmesan cheese, and a hint of black pepper.</p>
+    </li>
+    <li class="menu__item" data-item-type="salads">
+      <img class="menu__image" src="/assets/images/foods/quinoa-salad.png" alt="a declicious quinoa salad" />
+      <h4 class="menu__name">Quinoa Salad</h4>
+      <p class="menu__price">₱280.00</p>
+      <p class="menu__description">
+        Nutrient-packed quinoa salad with mixed greens, cherry tomatoes, cucumber, and feta cheese.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="desserts">
+      <img class="menu__image" src="/assets/images/foods/tiramisu.jpg" alt="a declicious tiramisu" />
+      <h4 class="menu__name">Tiramisu</h4>
+      <p class="menu__price">₱280.00</p>
+      <p class="menu__description">
+        Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="salads">
+      <img class="menu__image" src="/assets/images/foods/veggie-wraps.png" alt="a declicious quinoa salad" />
+      <h4 class="menu__name">Veggie Wraps</h4>
+      <p class="menu__price">₱180.00</p>
+      <p class="menu__description">
+        Fresh vegetable fillings wrapped in whole-grain tortillas, perfect for a light and wholesome snack
+      </p>
+    </li>
+  </ul>
+</template>

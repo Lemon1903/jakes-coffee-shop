@@ -1,0 +1,210 @@
+<template>
+  <div class="menu__sidebar">
+    <div class="menu__wrapper">
+      <h3 class="menu__heading">HOT</h3>
+      <button type="button" class="menu__category" data-category="filter-brewed">
+        <img class="menu__category-icon" src="assets/images/icons/filter-brewed.png" alt="a brewing machine" />
+        <p class="menu__category-name">Filter Brewed</p>
+      </button>
+      <button type="button" class="menu__category" data-category="espresso-based">
+        <img class="menu__category-icon" src="assets/images/icons/espresso-based.png" alt="a coffee machine icon" />
+        <p class="menu__category-name">Espresso-Based</p>
+      </button>
+      <button type="button" class="menu__category" data-category="specialty">
+        <img class="menu__category-icon" src="assets/images/icons/specialty-hot-coffee.png" alt="a hot coffee icon" />
+        <p class="menu__category-name">Specialty Coffees</p>
+      </button>
+    </div>
+    <div class="menu__wrapper">
+      <h3 class="menu__heading">COLD</h3>
+      <button type="button" class="menu__category" data-category="cold-brew">
+        <img class="menu__category-icon" src="assets/images/icons/cold-brew.png" alt="a cold brew icon" />
+        <p class="menu__category-name">Cold Brew</p>
+      </button>
+      <button type="button" class="menu__category" data-category="iced-coffee">
+        <img class="menu__category-icon" src="assets/images/icons/iced-coffees.png" alt="an iced coffeee icon" />
+        <p class="menu__category-name">Iced Coffees</p>
+      </button>
+      <button type="button" class="menu__category" data-category="frosty-treats">
+        <img class="menu__category-icon" src="assets/images/icons/frosty-treats.png" alt="a milkshake icon" />
+        <p class="menu__category-name">Frosty Treats</p>
+      </button>
+    </div>
+  </div>
+  <ul class="menu__items">
+    <li class="menu__item" data-item-type="frosty-treats">
+      <img class="menu__image" src="assets/images/coffees/affogato.jpg" alt="a declicious affogato" />
+      <h4 class="menu__name">Affogato</h4>
+      <p class="menu__price">₱300.00</p>
+      <p class="menu__description">
+        Indulge in a delightful blend of hot espresso poured over creamy vanilla ice cream.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="espresso-based">
+      <img class="menu__image" src="assets/images/coffees/americano-coffee.jpg" alt="a delicious americano coffee" />
+      <h4 class="menu__name">Americano</h4>
+      <p class="menu__price">₱150.00</p>
+      <p class="menu__description">
+        A bold and satisfying coffee experience, with espresso shots diluted just right for a smooth finish.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="espresso-based">
+      <img class="menu__image" src="assets/images/coffees/cappuccino-coffee.jpg" alt="a delicious cappuccino" />
+      <h4 class="menu__name">Capuccino</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Experience velvety smoothness and rich flavor in every sip of this classic espresso-based drink topped with
+        frothy milk foam.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="cold-brew">
+      <img class="menu__image" src="assets/images/coffees/cold-brew-coffee.png" alt="a delicious cold brew" />
+      <h4 class="menu__name">Classic Cold Brew</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Discover the refreshing boldness of coffee brewed slowly in cold water, served over ice for the perfect chill.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="frosty-treats">
+      <img class="menu__image" src="assets/images/coffees/coffee-milkshake.jpg" alt="a delicious caramel milkshake" />
+      <h4 class="menu__name">Coffee Milkshake</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">
+        A heavenly fusion of coffee and creamy sweetness, blending into a delightful frozen treat.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="filter-brewed">
+      <img class="menu__image" src="assets/images/coffees/drip-coffee.jpg" alt="a delicious brewed drip coffee" />
+      <h4 class="menu__name">Drip Coffee</h4>
+      <p class="menu__price">₱112.50</p>
+      <p class="menu__description">
+        Enjoy the simple pleasure of freshly brewed coffee, capturing the full essence and aroma of fine beans.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="espresso-based">
+      <img class="menu__image" src="assets/images/coffees/espresso-coffee.jpg" alt="a delicious espresso" />
+      <h4 class="menu__name">Espresso</h4>
+      <p class="menu__price">₱112.50</p>
+      <p class="menu__description">
+        Embrace the intense, concentrated flavors of finely ground coffee beans brewed under pressure, delivering a
+        robust kick of caffeine.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="specialty">
+      <img class="menu__image" src="assets/images/coffees/flat-white-coffee.jpg" alt="a delicious flat wbite coffee" />
+      <h4 class="menu__name">Flat White</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Indulge in a harmonious balance of velvety steamed milk and bold espresso, offering a smooth and creamy taste.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="cold-brew">
+      <img
+        class="menu__image"
+        src="assets/images/coffees/flavored-cold-brew1.png"
+        alt="a delicious flavored cold brew"
+      />
+      <h4 class="menu__name">Flavored Cold Brew</h4>
+      <p class="menu__price">₱225.00</p>
+      <p class="menu__description">
+        Dive into a world of refreshing flavors like vanilla or caramel, infused into cold-brewed coffee for a
+        delightful twist.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="frosty-treats">
+      <img class="menu__image" src="assets/images/coffees/frapuccino.jpg" alt="a delicious frapuccino" />
+      <h4 class="menu__name">Frapuccino</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">
+        A frosty delight blending espresso, milk, and ice, topped with whipped cream for a cool and creamy treat.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="filter-brewed">
+      <img
+        class="menu__image"
+        src="assets/images/coffees/french-press-coffee.jpg"
+        alt="a delicious brewed frnch press coffee"
+      />
+      <h4 class="menu__name">French Press Coffee</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Savor the rich and full-bodied flavors of coffee brewed to perfection in a classic French press.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="iced-coffee">
+      <img class="menu__image" src="assets/images/coffees/iced-coffee.jpg" alt="a delicious iced coffee" />
+      <h4 class="menu__name">Iced Coffee</h4>
+      <p class="menu__price">₱162.50</p>
+      <p class="menu__description">
+        Cool off with this chilled coffee delight, perfectly brewed and served over ice for a refreshing pick-me-up.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="iced-coffee">
+      <img class="menu__image" src="assets/images/coffees/iced-latte.png" alt="a delicious iced latte" />
+      <h4 class="menu__name">Iced Latte</h4>
+      <p class="menu__price">₱225.00</p>
+      <p class="menu__description">
+        A creamy and satisfying blend of espresso and milk over ice, perfect for those warm days or any time.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="iced-coffee">
+      <img class="menu__image" src="assets/images/coffees/iced-mocha-coffee.jpg" alt="a delicious iced mocha" />
+      <h4 class="menu__name">Iced Mocha</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">
+        Enjoy the irresistible combination of rich espresso, creamy milk, and decadent chocolate, chilled to perfection.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="specialty">
+      <img class="menu__image" src="assets/images/coffees/irish-coffee.jpg" alt="a delicious irish coffee" />
+      <h4 class="menu__name">Irish Coffee</h4>
+      <p class="menu__price">₱300.00</p>
+      <p class="menu__description">
+        Warm up with a delightful blend of hot coffee, Irish whiskey, sugar, and a dollop of whipped cream.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="espresso-based">
+      <img class="menu__image" src="assets/images/coffees/latte-coffee.png" alt="a delicious latte" />
+      <h4 class="menu__name">Latte</h4>
+      <p class="menu__price">₱225.00</p>
+      <p class="menu__description">
+        Indulge in the creamy richness of steamed milk combined with smooth espresso, topped with a delicate foam layer.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="espresso-based">
+      <img class="menu__image" src="assets/images/coffees/macchiato.png" alt="a delicious macchiato" />
+      <h4 class="menu__name">Macchiato</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Experience the perfect balance of bold espresso "stained" with a touch of creamy steamed milk, creating a
+        delightful contrast of flavors.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="specialty">
+      <img
+        class="menu__image"
+        src="assets/images/coffees/mocha-latte-coffee.png"
+        alt="a delicious special mocha coffee"
+      />
+      <h4 class="menu__name">Mocha</h4>
+      <p class="menu__price">₱250.00</p>
+      <p class="menu__description">
+        Delight in the harmonious blend of rich espresso and decadent chocolate, topped with whipped cream for a
+        luxurious treat.
+      </p>
+    </li>
+    <li class="menu__item" data-item-type="filter-brewed">
+      <img
+        class="menu__image"
+        src="assets/images/coffees/pour-over-coffee.jpg"
+        alt="a delicious brewed pour-over coffee"
+      />
+      <h4 class="menu__name">Pour-Over Coffee</h4>
+      <p class="menu__price">₱200.00</p>
+      <p class="menu__description">
+        Taste the artistry of coffee brewed slowly, allowing each drop to capture the essence of carefully selected
+        beans.
+      </p>
+    </li>
+  </ul>
+</template>

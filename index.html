@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+    <title>Jakes Coffee Shop</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <a href="#home" class="nav__logo">Jake's Coffee Shop</a>
+        <i class="bx bx-menu bx-md nav__menu"></i>
+        <ul tabindex="-1" class="nav__links">
+          <li class="nav__link">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav__link">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__link">
+            <a href="#music">Music</a>
+          </li>
+          <li class="nav__link">
+            <a href="#menu">Menu</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="section__header">
+          <h1 class="section__heading hero__heading">Welcome to Jake's Coffee Shop: Where Every Cup Tells a Story</h1>
+          <p class="section__description hero__description">
+            Indulge in the rich flavors of freshly brewed coffee and the warm ambiance of community. Discover your
+            favorite brews, connect with fellow coffee lovers, and create lasting memories, one sip at a time. Welcome
+            to a place where every cup tells a unique story.
+          </p>
+          <a href="#about" class="hero__btn">
+            Learn More
+            <i class="bx bx-right-arrow-alt hero__btn-icon"></i>
+          </a>
+        </div>
+      </section>
+    </header>
+    <section class="about" id="about">
+      <h2 class="section__heading">About Us</h2>
+      <div class="about__container">
+        <img class="about__table" src="assets/images/about.jpg" alt="a set of foods" />
+        <div class="about__wrapper">
+          <h3 class="about__title">What makes our coffee shop special?</h3>
+          <p class="about__content">
+            Jake's Coffee Shop is your cozy haven for exceptional coffee and vibrant community connections. Step into
+            our inviting space and experience more than just great brews—we’re a place where every cup tells a story and
+            every event sparks creativity. Whether you’re working on your next project, unwinding with friends, or
+            simply treating yourself to our specialty drinks and freshly made snacks, you’ll find yourself immersed in a
+            warm and welcoming atmosphere that inspires. <br /><br />
+            What makes Jake's truly special is our commitment to fostering connections beyond coffee. Join us for music
+            nights filled with soulful tunes, poetry readings that ignite imagination, and open mic events where every
+            voice is celebrated. Our vibrant community of enthusiasts and artists makes every visit unique, turning
+            simple moments into unforgettable experiences. At Jake's Coffee Shop, every sip and gathering is a chance to
+            create meaningful connections and cherished memories.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="music" id="music">
+      <div class="section__header">
+        <h2 class="section__heading">Open Mic Nights</h2>
+        <p class="section__description">
+          Discover a vibrant stage for artists of all kinds at our open mic nights! Whether you’re a seasoned performer
+          or new to the spotlight, share your creativity in music, poetry, or storytelling. Join us for an evening of
+          diverse talents and supportive vibes!<br /><br />
+          As a listener, immerse yourself in a captivating showcase of music, poetry, and storytelling, where every
+          performance adds to the rich tapestry of artistic expression, creating unforgettable moments of shared
+          creativity and connection.
+        </p>
+      </div>
+      <div class="bubble bubble--1"></div>
+      <div class="bubble bubble--2"></div>
+      <div class="bubble bubble--3"></div>
+      <ul class="carousel">
+        <li class="carousel__slide--empty"></li>
+        <li class="carousel__slide current-slide">
+          <div class="music-player">
+            <img class="music-player__image" src="assets/images/cover/fast-car-cover.jpg" alt="fast car cover image" />
+            <h4 class="music-player__title">Fast Car</h4>
+            <p class="music-player__artist">Tracy Chapman</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Tracy Chapman Fast Car Lyrics.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Acoustic</p>
+        </li>
+        <li class="carousel__slide current-slide">
+          <div class="music-player">
+            <img class="music-player__image" src="assets/images/cover/wonderwall.jpg" alt="wonderwall cover image" />
+            <h4 class="music-player__title">Wonderwall</h4>
+            <p class="music-player__artist">Oasis</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Oasis Wonderwall Lyrics.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Rock</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img
+              class="music-player__image"
+              src="assets/images/cover/aint-no-sunshine-cover.jpg"
+              alt="ain't no sunshine cover image"
+            />
+            <h4 class="music-player__title">Ain't No Sunshine</h4>
+            <p class="music-player__artist">Bill Wither</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Ain t No Sunshine.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Soulful R&B</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img class="music-player__image" src="assets/images/cover/ho-hey-cover.jpg" alt="ho hey cover image" />
+            <h4 class="music-player__title">Ho Hey</h4>
+            <p class="music-player__artist">The Lumineers</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Ho Hey.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Indie Pop</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img
+              class="music-player__image"
+              src="assets/images/cover/die-a-happy-man.jpg"
+              alt="die a happy man cover image"
+            />
+            <h4 class="music-player__title">Die a Happy Man</h4>
+            <p class="music-player__artist">Thomas Rhett</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Die A Happy Man.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Country</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img
+              class="music-player__image"
+              src="assets/images/cover/all-about-that-bass.jpg"
+              alt="all about that bass cover image"
+            />
+            <h4 class="music-player__title">All About That Bass</h4>
+            <p class="music-player__artist">Meghan Trainor</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/All About That Bass Official Video.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Jazz</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img
+              class="music-player__image"
+              src="assets/images/cover/shake-it-off.png"
+              alt="shake it off cover image"
+            />
+            <h4 class="music-player__title">Shake it off</h4>
+            <p class="music-player__artist">Taylor Swift</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Shake It Off Taylor Swift Lyrics.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Pop</p>
+        </li>
+        <li class="carousel__slide">
+          <div class="music-player">
+            <img
+              class="music-player__image"
+              src="assets/images/cover/rolling-In-the-deepjpg.jpg"
+              alt="rolling in the deep cover image"
+            />
+            <h4 class="music-player__title">Rolling in the Deep</h4>
+            <p class="music-player__artist">Adele</p>
+            <div class="music-player__controls">
+              <i class="bx bxs-volume-low music-player__btn music-player__btn--hidden"></i>
+              <div class="music-player__controls--main">
+                <i class="bx bx-skip-previous music-player__btn music-player__btn--skip-previous"></i>
+                <i class="bx bx-play music-player__btn music-player__btn--play-pause"></i>
+                <i class="bx bx-skip-next music-player__btn music-player__btn--skip-next"></i>
+              </div>
+              <div class="music-player__volume">
+                <i class="bx bxs-volume-low music-player__btn music-player__btn--volume"></i>
+                <input
+                  class="music-player__progress volume-track"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.1"
+                  value="0.5"
+                />
+              </div>
+            </div>
+            <div class="music-player__track">
+              <span class="music-player__current-time">0:00</span>
+              <input class="music-player__progress track-progress" type="range" min="0" max="100" value="0" />
+              <span class="music-player__total-time">0:00</span>
+            </div>
+            <audio class="music-player__audio" src="assets/audio/Rolling in the Deep Official Music Video.mp3"></audio>
+          </div>
+          <p class="music-player__genre">Blues</p>
+        </li>
+        <li class="carousel__slide--empty"></li>
+      </ul>
+    </section>
+    <section id="menu" class="menu">
+      <h2 class="section__heading">Our Menu</h2>
+      <div class="menu__nav">
+        <button type="button" id="coffees" class="menu__nav__btn menu__nav__btn--active">Coffees</button>
+        <button type="button" id="foods" class="menu__nav__btn">Foods</button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__header">
+          <p class="nav__logo">Jake's Coffee Shop</p>
+          <p class="footer__description">
+            From bean to cup, we craft moments of warmth and flavor at our shop, where every sip tells a story.
+          </p>
+        </div>
+        <nav>
+          <ul class="footer__nav__links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#music">Music</a>
+            </li>
+            <li>
+              <a href="#menu">Menu</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <div class="footer__contact-info">
+            <i class="bx bxs-location-plus bx-md"></i>
+            23 Pine Road Nottingham, NGI 5YU
+          </div>
+          <div class="footer__contact-info">
+            <i class="bx bxs-phone bx-md"></i>
+            0115 9324567
+          </div>
+          <div class="footer__contact-info">
+            <i class="bx bxs-envelope bx-md"></i>
+            jakescoffeeshop@gmail.com
+          </div>
+        </div>
+      </div>
+      <p class="copyright">1998-2021 POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+    </footer>
+    <button title="Scroll to top" class="scroll-top">
+      <i class="bx bx-chevron-up"></i>
+    </button>
+    <script src="js/script.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/carousel.js"></script>
+  </body>
+</html>
