@@ -400,6 +400,7 @@ nav {
 .current-playing {
   transform: scaleY(1) !important;
   filter: none !important;
+  pointer-events: auto !important;
 }
 .current-playing .music-player__image {
   filter: none;

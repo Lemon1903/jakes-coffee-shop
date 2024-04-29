@@ -42,6 +42,7 @@ playpauseButtons.forEach((button, index) => {
 
 function setSlidesStyle(shrink) {
   slides.forEach((slide) => {
+    slide.style.pointerEvents = shrink ? "none" : "auto";
     slide.style.filter = shrink ? "blur(0.25rem)" : "none";
     if (window.innerWidth < 768) {
       slide.style.transform = `scaleY(${shrink ? 0.9 : 1})`;
@@ -53,10 +54,9 @@ function setSlidesStyle(shrink) {
 
 function setSlidesOffset() {
   const currentSlide = track.querySelector(".current-slide");
+  const slideWidth = currentSlide.getBoundingClientRect().width;
   slides.forEach((slide, index) => {
-    const width = window.getComputedStyle(slide).getPropertyValue("width");
-    const computedWidth = parseInt(width.split("px")[0]);
-    slide.setAttribute("data-offset-x", computedWidth * index + "px");
+    slide.setAttribute("data-offset-x", slideWidth * index + "px");
   });
   track.scroll({ left: parseFloat(currentSlide.getAttribute("data-offset-x")), behavior: "smooth" });
 }
@@ -88,7 +88,6 @@ function moveToSlide(currentSlide, targetSlide) {
   targetSlide.classList.add("current-slide");
   targetSlide.classList.toggle("current-playing");
 
-  // set the track and slides
   if (currentPlayingIdx === -1) {
     // all players paused
     setSlidesStyle(false);
