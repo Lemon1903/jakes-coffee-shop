@@ -47,22 +47,23 @@ function initializeMenuContent(content) {
 
 /* ------ Navigation Menu ------ */
 const navMenu = document.querySelector(".nav__menu");
+const navMenuIcon = navMenu.querySelector("i");
 const links = document.querySelector(".nav__links");
 
 navMenu.addEventListener("touchstart", (e) => {
   e.preventDefault();
   links.classList.toggle("show");
-  if (navMenu.classList.contains("bx-menu")) {
+  if (navMenuIcon.classList.contains("bx-menu")) {
     links.focus();
-    navMenu.classList.replace("bx-menu", "bx-x");
+    navMenuIcon.classList.replace("bx-menu", "bx-x");
   } else {
-    navMenu.classList.replace("bx-x", "bx-menu");
+    navMenuIcon.classList.replace("bx-x", "bx-menu");
   }
 });
 
 links.addEventListener("blur", () => {
   links.classList.remove("show");
-  navMenu.classList.replace("bx-x", "bx-menu");
+  navMenuIcon.classList.replace("bx-x", "bx-menu");
 });
 
 const navLinks = document.querySelectorAll(".nav__link");
