@@ -29,7 +29,7 @@ previousBtns.forEach((button, index) => {
 let currentPlayingIdx = -1;
 playpauseButtons.forEach((playpauseButton, index) => {
   playpauseButton.addEventListener("click", () => {
-    if (currentPlayingIdx !== -1 && currentPlayingIdx !== index) {
+    if (currentPlayingIdx > -1 && currentPlayingIdx !== index) {
       pausePlayer(currentPlayingIdx);
     }
     togglePlayer(index);
@@ -112,7 +112,7 @@ function restartPlayer(index) {
   audios[index].currentTime = 0;
   audios[index].play();
   playpauseButton.classList.replace("bx-revision", "bx-pause");
-  currentPlayingIdx = index;
+  currentPlayingIdx = -2;
 }
 
 function togglePlayer(index) {

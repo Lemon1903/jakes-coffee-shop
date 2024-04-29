@@ -402,12 +402,11 @@ nav {
 
 .music-player {
   flex-shrink: 0;
-  position: relative;
   margin-inline: auto;
   max-width: 24rem;
   width: 100%;
   border-radius: 1rem;
-  padding: 1.75rem;
+  padding: clamp(1.125rem, 4.5vw, 1.75rem);
   color: hsl(var(--light));
   background-color: hsl(var(--dark), 0.25);
   text-align: center;

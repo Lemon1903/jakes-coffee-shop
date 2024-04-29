@@ -1,3 +1,5 @@
+const track = document.querySelector(".carousel");
+
 window.addEventListener("load", () => {
   setSlidesOffset();
   document.querySelector(":root").style.setProperty("--vh", window.innerHeight / 100 + "px");
@@ -22,7 +24,13 @@ nextBtns.forEach((button) => {
   });
 });
 
-const track = document.querySelector(".carousel");
+audios.forEach((audio) => {
+  audio.addEventListener("ended", () => {
+    setSlidesStyle(false);
+    track.style.overflowX = "auto";
+  });
+});
+
 const slides = document.querySelectorAll(".carousel__slide");
 playpauseButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
@@ -31,12 +39,6 @@ playpauseButtons.forEach((button, index) => {
     moveToSlide(currentSlide, targetSlide);
   });
 });
-
-function disableScroll(e) {
-  if (e.deltaX !== 0) {
-    e.preventDefault();
-  }
-}
 
 function setSlidesStyle(shrink) {
   slides.forEach((slide) => {
@@ -79,23 +81,21 @@ function moveToSlide(currentSlide, targetSlide) {
   track.scroll({ left: parseFloat(targetSlide.getAttribute("data-offset-x")), behavior: "smooth" });
   // reset the previous slide
   currentSlide.classList.remove("current-slide");
-  if (currentSlide !== targetSlide) {
+  if (currentSlide !== targetSlide || currentPlayingIdx === -2) {
     currentSlide.classList.remove("current-playing");
   }
   // set the new slide
-  targetSlide.classList.toggle("current-playing");
   targetSlide.classList.add("current-slide");
+  targetSlide.classList.toggle("current-playing");
 
   // set the track and slides
   if (currentPlayingIdx === -1) {
     // all players paused
     setSlidesStyle(false);
-    track.removeEventListener("wheel", disableScroll);
-    track.removeEventListener("touchmove", disableScroll);
+    track.style.overflowX = "auto";
   } else {
     // a player is played
     setSlidesStyle(true);
-    track.addEventListener("wheel", disableScroll);
-    track.addEventListener("touchmove", disableScroll);
+    track.style.overflowX = "hidden";
   }
 }
